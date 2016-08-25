@@ -33,3 +33,31 @@ def type_stuff
   go
 end
 
+def set_speed
+  system('clear')
+  puts "What speed would you like me to type back? (enter a number)"
+  puts "1) chillin'"
+  puts "2) fast"
+  puts "3) smoking!"
+  print "> "
+  speed_setting = gets.chomp.to_i
+  case speed_setting
+  when 1
+    puts "Aight, we can do this slow"
+    @speed = 0.1
+    sleep 1
+  when 2
+    puts "You like fast huh?"
+    @speed = 0.05
+    sleep 1
+  when 3
+    puts "Hold on to your keyboard!"
+    @speed = 0.02
+    sleep 1
+  else
+    "I'm sorry, can you try that again?"
+  end
+  system('clear')
+  type_stuff
+end
+
