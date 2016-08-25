@@ -1,3 +1,6 @@
+@speed = 0.1
+@first_time == true
+
 def print_out(length, array, speed)
   length.times do |i|
     i += 1
@@ -61,3 +64,11 @@ def set_speed
   type_stuff
 end
 
+def go
+  type_stuff
+  set speed
+end
+
+system('clear')
+sleep 0.5
+go
