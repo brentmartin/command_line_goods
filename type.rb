@@ -1,3 +1,13 @@
+def print_out(length, array, speed)
+  length.times do |i|
+    i += 1
+    system('clear')
+    text = array[0..i].join("")
+    print text
+    sleep speed
+  end
+end
+
 def type_stuff
   sleep 0.5
   if @first_time == false
